@@ -1,0 +1,14 @@
+
+<h2 class="news-heading">Haberler</h2>
+<div class="news-container">
+  <div class="news-article" *ngFor="let news of newss">
+    <img src="../assets/images/news.jpg" alt="{{news.title}}" class="news-image">
+    <div class="news-content">
+      <h3 class="news-title">{{news.title}}</h3>
+      <p class="news-context">{{news.context}}</p>
+  
+         <!-- <app-comment-form></app-comment-form> -->
+         
+    </div>
+  </div>
+</div>

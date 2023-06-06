@@ -1,0 +1,28 @@
+nav {
+  background: linear-gradient(to right, #dccf99, #b68952);
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  margin-right: 20px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  background: linear-gradient(to right, #704e2c, #4d2e10);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

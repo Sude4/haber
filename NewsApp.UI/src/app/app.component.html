@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+
+<div class="image-container">
+  <div class="image-overlay">
+    <img src="../assets/images/home1.jpg" alt="Resim Açıklaması" class="small-image">
+  </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <div class="headline-container">
+    <div class="headline-box kaza">
+      <i class="fas fa-exclamation-circle"></i>
+      <h2 class="headline-title">Kazalar</h2>
+    </div>
+    <div class="headline-box siyaset">
+      <i class="fas fa-balance-scale"></i>
+      <h2 class="headline-title">Siyaset</h2>
+    </div>
+    <div class="headline-box futbol">
+      <i class="fas fa-futbol"></i>
+      <h2 class="headline-title">Futbol</h2>
+    </div>
+    <div class="headline-box magazin">
+      <i class="fas fa-star"></i>
+      <h2 class="headline-title">Magazin</h2>
+    </div>
+  </div>
+</div>
+
+<h2 class="news-heading">Haberler</h2>
+<div class="news-container">
+  <div class="news-article" *ngFor="let news of newss">
+    <img src="../assets/images/news.jpg" alt="{{news.title}}" class="news-image">
+    <div class="news-content">
+      <h3 class="news-title">{{news.title}}</h3>
+      <p class="news-context">{{news.context}}</p>
+  <a [routerLink]="['/news', news.id]" routerLinkActive="active">Haberi Görüntüle</a>
+         <app-comment-form></app-comment-form>
+         
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+

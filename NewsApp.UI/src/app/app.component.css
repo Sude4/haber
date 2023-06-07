@@ -56,27 +56,27 @@
 
   .news-heading {
     text-align: center;
-    font-size: 28px; /* İstenilen font büyüklüğü */
+    font-size: 28px; 
     font-weight: bold;
     margin-top: 20px;
-    font-family: 'Arial', sans-serif; /* Kullanılacak font ailesi */
-    text-transform: uppercase; /* Yazıyı büyük harfe dönüştürür */
-    color: #333; /* Yazı rengi */
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    color: #333; 
   }
   .news-container {
     display: flex;
-    justify-content: space-between; /* Haberleri boşluk bırakarak yan yana yerleştirir */
+    justify-content: space-between; 
     align-items: center;
-    flex-wrap: wrap; /* Haberler sığmazsa satır atlar */
+    flex-wrap: wrap; 
   }
 
   .news-article {
-    width: calc(50% - 10px); /* Haberlerin yarısından biraz daha küçük genişlikte */
+    width: calc(50% - 10px); 
     margin-bottom: 20px;
   }
 
   .news-image {
-    max-width: 100%; /* Resimlerin maksimum genişliği */
+    max-width: 100%; 
     height: auto;
   }
 
@@ -85,12 +85,12 @@
   }
 
   .news-title {
-    font-size: 20px; /* Haber başlığı font büyüklüğü */
+    font-size: 20px; 
     font-weight: bold;
     margin-top: 10px;
   }
 
   .news-context {
     margin-top: 5px;
-    color: #666; /* Haber metni rengi */
+    color: #666;
   }

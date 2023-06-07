@@ -14,7 +14,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { NewsDetailComponent } from './components/news-detail/news-detail.component'; // Haber detay sayfasının bileşenini içe aktarın
+import { NewsDetailComponent } from './components/news-detail/news-detail.component'; // Haber detay sayfasının bileşenini içe aktarır
 
 const routes: Routes = [
   { path: 'news/:id', component: NewsDetailComponent }, // Haber detay sayfası rotası

@@ -11,6 +11,8 @@ Haber içerik ve başlığı da bu şekildedir =>   <h3 class="news-title">{{new
   }
   Fakat bu kısımın daha da geliştirilmesi gerektiğini düşünüyorum birkaç eksiği var.
   Backend tarafından istenilenleri eksiksiz yerine getirdiğimi düşünüyorum . Kodlarımı yorum satırlarıyla henüz açıklamadım fakat açıklamaları ekleyeceğim . 
+   
+   
    [HttpGet]
         public async Task<ActionResult<List<TheNews>>> GetTheNewss() {
 
@@ -25,6 +27,8 @@ Haber içerik ve başlığı da bu şekildedir =>   <h3 class="news-title">{{new
 
             return Ok(await _context.TheNewss.ToListAsync());
         }
+      
+      
  Bu kısım TheNewsController.cs içindeki bir yapı , kısaca açıklayacak olursam:
    Bir veritabanı bağlantısı olan DataContext sınıfına erişmek için enjekte edilen _context bağımlılığı kullanılıyor. Totalde 4  farklı Http isteği var fakat dediğim gibi ikisine açıklama yapmak istedim. GetTheNewss metodu, HttpGet isteklerine yanıt olarak çalışır ve _context üzerinden TheNewss tablosundaki tüm verileri alır ve bunları Ok metodunu kullanarak HTTP 200 (Başarılı) yanıtıyla birlikte döndürür.
 

@@ -1,7 +1,7 @@
 # HaberSitesi
 Bu projede Haber Sitesi örneği yaptım. Backend tarafında .Net Sql Server ile çalıştım. Frontend Tarafında Angular ile çalıştım. .Net tarafını Visual Studio ile Anguları ise VSCode ile geliştirdim. Entity Framework Core, veritabanı işlemleri için kullandım. Haber ve Yorum olarak 2 model içeriyor . Haber ile alakalı her şeyi veritabanından erişim sağlanıyor. CRUD işlemleri için uygun endpointleri sağlıyor. HttpPost, HttpGet, HttpPut,[HttpDelete("{id}")] . 
 Haberi görüntüleye tıklandığında Haberin idsine göre sayfa değişikliği olmaktadır => <a [routerLink]="['/news', news.id]" routerLinkActive="active">Haberi Görüntüle</a> kullanımı bu şekildedir.
-Resimlerimi bu şekilde ekledim =>  "<img src="../assets/images/news.jpg" alt="{{news.title}}" class="news-image">"
+Resimlerimi bu şekilde ekledim =>  "<img src="url" alt="{{news.title}}" class="news-image">"
 Haber içerik ve başlığı da bu şekildedir =>  " <h3 class="news-title">{{news.title}}</h3>
       <p class="news-context">{{news.context}}</p>"
       
